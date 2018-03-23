@@ -1,0 +1,28 @@
+﻿<body class="BottomsBody">
+    @model IEnumerable<WardrobeMVC.Models.Bottom>
+
+    @{
+        ViewBag.Title = "Index";
+    }
+
+    <h2>Wardrobe Bottoms</h2>
+
+    <p>
+        @Html.ActionLink("Add New Bottom", "Create")
+    </p>
+
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-6">
+
+                <img class="Images" src="@Html.DisplayFor(modelItem => item.Photo)" />
+                <h3>@Html.DisplayFor(modelItem => item.BottomName)</h3>
+                <p>@Html.ActionLink("Edit", "Edit", new { id = item.BottomsID }) : @Html.ActionLink("Details", "Details", new { id = item.BottomsID }) : @Html.ActionLink("Delete", "Delete", new { id = item.BottomsID })</p>
+
+            </div>
+        }
+    </div>
+</body>
+
+

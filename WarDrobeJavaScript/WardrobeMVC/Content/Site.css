@@ -1,0 +1,149 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*Tops Page*/
+body.TopsBody {
+    background-image: url('Images/stone_pattern.jpg');
+    background-size: cover;
+}
+img.Images{
+    height:100px;
+    width:100px;
+}
+
+img.Images:hover {
+    height: 300px;
+    width: 300px;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: yellow;
+}
+
+a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: yellow;
+}
+
+a:hover {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+    background-color:black;
+}
+
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: yellow;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: yellow;
+}
+
+/*Bottoms Page*/
+body.BottomsBody {
+    background-image: url('Images/BBR.jpg');
+    background-size:cover;
+}
+
+/*Shoes Body*/
+body.ShoesBody {
+    background-image: url('Images/SBR.jpg');
+    background-size:cover;
+}
+
+/*Accessories Body*/
+body.AccBody {
+    background-image: url('Images/ABR.jpg');
+    background-size: cover;
+}
+
+/*Home Page*/
+body.HomeBody {
+    background-image: url('Images/HBR.jpg');
+    background-size:cover;
+}
+
+
+.img-thumbnail {
+    background-color: darkslategray;
+}
+
+.col.HomeImg {
+    padding-left:125px;
+}
+
+.col.HomeImg img {
+    height: 400px;
+    width: 300px;
+}
+
+h1.Home {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+p.Home {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+h1.Home{
+    padding-left:200px;
+}
+
+p.Home {
+    padding-left: 150px;
+}
+
+/*Navagation Bar*/
+.navbar-header{
+    background-color:black;
+}
+
+a.navbar-brand {
+    color: yellow !important;
+}
+
+a.navbar-brand:hover {
+    color: red!important;
+    background-color:black!important;
+}
+
+.navbar.navbar-inverse.navbar-fixed-top{
+    background-color:black!important;
+}
+
+li a {
+    color: yellow !important;
+}
+
+    li a:hover {
+        color: red !important;
+        background-color: black !important;
+    }

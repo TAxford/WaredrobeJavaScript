@@ -1,0 +1,21 @@
+﻿<body class="ShoesBody">
+    @model WardrobeMVC.Models.Sho
+
+    @{
+        ViewBag.Title = "Details";
+    }
+
+    <h2>Shoe Details</h2>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <img class="Images" src="@Html.DisplayFor(model => model.Photo)" />
+                <p>@Html.DisplayNameFor(model => model.ShoeName) : @Html.DisplayFor(model => model.ShoeName)</p>
+                <p>@Html.DisplayNameFor(model => model.Color) : @Html.DisplayFor(model => model.Color)</p>
+                <p>@Html.DisplayNameFor(model => model.Season) : @Html.DisplayFor(model => model.Season)</p>
+                <p>@Html.DisplayNameFor(model => model.Occasion) : @Html.DisplayFor(model => model.Occasion)</p>
+                <p>@Html.DisplayNameFor(model => model.Type) : @Html.DisplayFor(model => model.Type)</p>
+                <p>@Html.ActionLink("Edit", "Edit", new { id = Model.ShoesID }) : @Html.ActionLink("Back to List", "Index")</p>
+            </div>
+        </div>
+</body>

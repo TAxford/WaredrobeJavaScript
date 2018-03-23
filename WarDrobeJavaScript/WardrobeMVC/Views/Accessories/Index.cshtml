@@ -1,0 +1,26 @@
+﻿<body class="AccBody">
+    @model IEnumerable<WardrobeMVC.Models.Accessory>
+
+    @{
+        ViewBag.Title = "Index";
+    }
+
+    <h2>Wardrobe Accessories</h2>
+
+    <p>
+        @Html.ActionLink("Add New Accessory", "Create")
+    </p>
+
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-6">
+
+                <img class="Images" src="@Html.DisplayFor(modelItem => item.Photo)" />
+                <h3>@Html.DisplayFor(modelItem => item.AccessoryName)</h3>
+                <p>@Html.ActionLink("Edit", "Edit", new { id = item.AccessoriesID }) : @Html.ActionLink("Details", "Details", new { id = item.AccessoriesID }) : @Html.ActionLink("Delete", "Delete", new { id = item.AccessoriesID })</p>
+
+            </div>
+        }
+    </div>
+</body>

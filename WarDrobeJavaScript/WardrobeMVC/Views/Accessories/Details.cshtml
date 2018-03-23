@@ -1,0 +1,20 @@
+﻿<body class="AccBody">
+    @model WardrobeMVC.Models.Accessory
+
+    @{
+        ViewBag.Title = "Details";
+    }
+
+    <h2>Accessory Details</h2>
+
+    <div class="row">
+        <div class="col-md-6">
+            <img class="Images" src="@Html.DisplayFor(model => model.Photo)" />
+            <p>@Html.DisplayNameFor(model => model.AccessoryName) : @Html.DisplayFor(model => model.AccessoryName)</p>
+            <p>@Html.DisplayNameFor(model => model.Color) : @Html.DisplayFor(model => model.Color)</p>
+            <p>@Html.DisplayNameFor(model => model.Season) : @Html.DisplayFor(model => model.Season)</p>
+            <p>@Html.DisplayNameFor(model => model.Type) : @Html.DisplayFor(model => model.Type)</p>
+            <p>@Html.ActionLink("Edit", "Edit", new { id = Model.AccessoriesID }) : @Html.ActionLink("Back to List", "Index")</p>
+        </div>
+    </div>
+</body>
