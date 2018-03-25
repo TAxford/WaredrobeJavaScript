@@ -38,6 +38,7 @@ img.Images:hover {
     width: 300px;
 }
 
+
 h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 50px;
@@ -105,12 +106,14 @@ body.HomeBody {
 
 h1.Home {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
+    color: yellow;
+    font-size:50px;
 }
 
 p.Home {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
+    color: yellow;
+    font-size: 20px;
 }
 
 h1.Home{
@@ -147,3 +150,7 @@ li a {
         color: red !important;
         background-color: black !important;
     }
+
+footer#footerMain{
+    padding:20px;
+}
