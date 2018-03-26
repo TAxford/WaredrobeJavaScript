@@ -1,19 +1,17 @@
-﻿<body class="HomeBody" onload="Greeting()">
-   
-    
-        <div class="jumboHome" id="jumboMain">
-            <h1 class="Home">Welcome to the Wardrobe</h1>
-            <p class="Home">Here you will find articles of clothing with details as well as be able to add your own.</p>
-            <p class="Home">Have fun and explore the endless options of this world.</p>
+﻿<body class="HomeBody" onload="Greeting()" onchange="Leaving">
+
+
+    <div class="jumboHome" id="jumboMain">
+        <h1 class="Home">Welcome to the Wardrobe</h1>
+        <p class="Home">Here you will find articles of clothing with details as well as be able to add your own.</p>
+        <p class="Home">Have fun and explore the endless options of this world.</p>
+        <p class="Home">Hover over image below to get rid of it and create a mess for fun.</p>
+    </div>
+    <div class="img-thumbnail">
+        <div class="col HomeImg">
+            <img src="/Content/Images/War1.jpg" onmouseover="this.src='/Content/Images/Clothes Mess.jpg'"/>
         </div>
-        <div class="img-thumbnail">
-            <div class="col HomeImg">
-                <img src="~/Content/Images/War1.jpg" />
-                <img src="~/Content/Images/War2.jpg" />
-                <img src="~/Content/Images/War3.jpg" />
-                <img src="~/Content/Images/War4.jpg" />
-                <img src="~/Content/Images/War5.jpg" />
-                <img src="~/Content/Images/War6.jpg" />
-            </div>
-        </div>
-    </body>
+
+
+    </div>
+</body>

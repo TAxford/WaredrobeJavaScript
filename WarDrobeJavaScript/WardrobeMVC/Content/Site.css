@@ -133,10 +133,11 @@ a.navbar-brand {
     color: yellow !important;
 }
 
-a.navbar-brand:hover {
+/*Commented out to allow Java Script to perform this function*/
+/*a.navbar-brand:hover {
     color: red!important;
     background-color:black!important;
-}
+}*/
 
 .navbar.navbar-inverse.navbar-fixed-top{
     background-color:black!important;
@@ -145,11 +146,11 @@ a.navbar-brand:hover {
 li a {
     color: yellow !important;
 }
-
-    li a:hover {
+/*Commented out to allow Java Script to perform this function*/
+    /*li a:hover {
         color: red !important;
         background-color: black !important;
-    }
+    }*/
 
 footer#footerMain{
     padding:20px;

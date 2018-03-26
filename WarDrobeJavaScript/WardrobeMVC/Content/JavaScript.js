@@ -8,6 +8,18 @@ function Greeting() {
 }
 
 
+/*Function to allow usered to hover over Navagation bar and change text color and size*/
+function overNText(x) {
+    x.style.backgroundColor = "Red";
+    x.style.color = "black";   
+    x.style.fontSize = "30px"
+}
+function outNText(x) {
+    x.style.backgroundColor = "black";
+    x.style.color = "Yellow";    
+    x.style.fontsize ="10px"
+}
+
 /*Function to change copy right in footer*/
 function overText(x){
     x.innerText = "created by Timothy Joe Axford II"
@@ -15,4 +27,10 @@ function overText(x){
 
 function outText(x){
     x.innerText = "&copy; @DateTime.Now.Year - AXFORD X CO";
+}
+
+/*Function to remove wardrobe and replace with a pile of clothes*/
+function overPhoto(x){
+    var image = document.getElementById("hover");
+    image.onmouseover = function () { image.src = "/Content/Images/Clothes Mess.jpg'"; }
 }
