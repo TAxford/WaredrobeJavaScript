@@ -34,3 +34,12 @@ function overPhoto(x){
     var image = document.getElementById("hover");
     image.onmouseover = function () { image.src = "/Content/Images/Clothes Mess.jpg'"; }
 }
+
+/*Function asking user to comfirm they want to change pages*/
+window.addEventListener("beforeunload", function (e) {
+    var confirmationMessage = 'It looks like you are changing pages.'
+        + 'If you want to cancel, please press cancel';
+
+    (e || window.event).returnValue = confirmationMessage; //Gecko + IE
+    return confirmationMessage; //Gecko + Webkit, Safari, Chrome etc.
+});
